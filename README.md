@@ -11,6 +11,8 @@ via Ansible.
 Yes I know I have SSH private keys in `private/`, please regenerate them they are just
 here for demo purposes :)
 
+Before using anything, do not forget to `pip install -r requirements.txt`
+
 ## Generate /cloud credentials.
 You have to login on the OVH panel, go to the /cloud section, then "Project manaagement",
 then OpenStack, then add a user. When it is done hit the wrench icon and "Download an Openstack
