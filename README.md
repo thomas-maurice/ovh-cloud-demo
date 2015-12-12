@@ -82,3 +82,16 @@ do. It will install:
  * pip
  * docker
  * git
+
+## Conclusion
+In the end you are able to spawn a fully configured
+cloud VM in minutes, just by running a single
+command.
+
+## Enhancements
+As an enhancement we can imagine using the [OVH Python bindings](https://github.com/ovh/python-ovh) to
+setup DNS for our VMs for example. The only limit
+being your imagination.
+
+If you have some enhancements to push onto this demo
+code, feel free to contact me on [twitter: @thomas_maurice](https://twitter.com/thomas_maurice)
