@@ -1,0 +1,5 @@
+---
+- name: "Install /etc/apt/sources.list"
+  copy: src=sources.list dest=/etc/apt/sources.list owner=root group=root
+- name: "Update apt cache"
+  apt: update_cache=yes

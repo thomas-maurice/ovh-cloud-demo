@@ -1,0 +1,8 @@
+---
+- name: "Install ssh"
+  apt: name=openssh-server
+- name: "Service"
+  service: name=ssh enabled=yes state=started
+- name: "Config sshd_config"
+  copy: src=sshd_config dest=/etc/ssh/sshd_config
+  notify: "Restart ssh"

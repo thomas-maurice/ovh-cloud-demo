@@ -1,0 +1,38 @@
+---
+- name: "Install base packages"
+  apt:
+    name={{ item }}
+    state=installed
+  with_items:
+    - dnsutils
+    - mtr
+    - wget
+    - curl
+    - apt-transport-https
+    - tcpdump
+    - iputils-ping
+    - bash-completion
+    - strace
+    - htop
+    - lsof
+- name: "Remove unanted packages"
+  apt: >
+    name={{ item }}
+    state=removed
+  with_items:
+    - cloud-init
+    - ntpdate
+- name: "Hard set hostname"
+  template: >
+    src=hostname.j2
+    dest=/etc/hostname
+    owner=root
+    group=root
+    mode=0644
+- name: "Setup motd"
+  template: >
+    src=motd.j2
+    dest=/etc/motd
+    owner=root
+    group=root
+    mode=0644

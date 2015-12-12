@@ -1,0 +1,7 @@
+---
+- name: "Install bash"
+  apt: name=bash
+- name: "Configure default .bashrc"
+  copy: src=bashrc dest=/etc/bash.bashrc owner=root group=root mode=0644
+- name: "Configure root .bashrc"
+  file: state=link src=/etc/bash.bashrc dest=/root/.bashrc force=yes

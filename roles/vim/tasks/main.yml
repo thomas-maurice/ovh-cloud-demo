@@ -1,0 +1,5 @@
+---
+- name: Install vim
+  apt: name=vim state=present
+- name: Configure vim
+  copy: src=vimrc dest=/etc/vim/vimrc owner=root group=root

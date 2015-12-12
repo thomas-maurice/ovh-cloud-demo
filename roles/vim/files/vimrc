@@ -1,0 +1,47 @@
+set nocompatible
+filetype off
+
+filetype plugin indent on
+
+filetype on
+filetype indent on
+set expandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set smarttab
+syntax on
+set lazyredraw
+set showmatch
+set incsearch
+set hlsearch
+set number
+set ruler
+set autoindent
+set smartindent
+set wildmenu
+set laststatus=2
+set cursorline
+set showmode
+set backspace=indent,eol,start
+set mouse=a
+set background=dark
+
+set foldenable
+set foldlevelstart=10
+set foldmethod=indent
+
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
+
+let mapleader=","
+
+nnoremap <leader><space> :nohlsearch<CR>
+nnoremap <space> za
+map <Leader><Right> 10<C-w><<CR>
+map <Leader><Down> 10<C-w>-<CR>
+map <Leader><Up> 10<C-w>+<CR>
+map <Leader><Left> 10<C-w>><CR>
+map <Leader>= 10<C-w>=<CR>
+map <Leader>s :%s/\s\+$//<CR>

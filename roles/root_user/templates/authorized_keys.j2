@@ -1,0 +1,4 @@
+{% for key in root_user.default_root_keys %}
+# {{ key.name }}
+{{ key.key }}
+{% endfor %}

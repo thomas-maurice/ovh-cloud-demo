@@ -1,0 +1,14 @@
+---
+- hosts: all
+  roles:
+    - apt
+    - root_user
+    - base
+    - ssh
+    - ntp
+    - bash
+    - vim
+    - tmux
+    - pip
+    - docker
+    - git

@@ -1,0 +1,5 @@
+---
+- name: "Install pip"
+  apt: name=python-pip
+- name: "Install libpython-dev"
+  apt: name=libpython-dev

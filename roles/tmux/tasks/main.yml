@@ -1,0 +1,5 @@
+---
+- name: "Install tmux"
+  apt: name=tmux
+- name: "Configure tmux"
+  copy: src=tmux.conf dest=/root/.tmux.conf owner=root group=root

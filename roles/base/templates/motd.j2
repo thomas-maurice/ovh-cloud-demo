@@ -1,0 +1,8 @@
+Welcome on {{ ansible_fqdn }} !
+
+I run {{ ansible_lsb.description }}, kernel {{ ansible_kernel }}
+
+CPU(s) : {{ ansible_processor_cores }}
+RAM    : {{ ansible_memory_mb.real.total }}Mb
+eth0   : {{ ansible_eth0.ipv4.address }}
+
